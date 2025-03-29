@@ -22,27 +22,23 @@ function App() {
       { threshold: 0.1 } // Trigger when 10% of the section is visible
     );
 
-    // Observe all sections
     document.querySelectorAll("section").forEach((section) => {
       observer.observe(section);
     });
 
-    // Cleanup observer on unmount
     return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
-    // Active nav link updater
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
       const navLinks = document.querySelectorAll(".nav-link");
-      const scrollPosition = window.scrollY + 100; // Adjust offset for better accuracy
+      const scrollPosition = window.scrollY + 100;
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
 
-        // Check if section is in view
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
           const id = section.getAttribute("id");
           navLinks.forEach((link) => {
@@ -52,10 +48,8 @@ function App() {
       });
     };
 
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup scroll listener on unmount
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -65,7 +59,28 @@ function App() {
       <header className="header">
         <div className="container header-container">
           <h1 className="logo">Neserelah Mussa</h1>
-          <nav className="nav">
+          <button
+            className="hamburger-menu"
+            onClick={() => {
+              const nav = document.querySelector('.nav');
+              if (nav) {
+                nav.classList.toggle('visible');
+              }
+            }}
+          >
+            <i className="fa-solid fa-bars"></i>
+          </button>
+          <nav
+            className="nav"
+            onClick={(e) => {
+              if (e.target.classList.contains("nav-link")) {
+                const nav = document.querySelector(".nav");
+                if (nav) {
+                  nav.classList.remove("visible");
+                }
+              }
+            }}
+          >
             <a href="#home" className="nav-link">
               Home
             </a>

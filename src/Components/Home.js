@@ -1,4 +1,5 @@
 import React from "react";
+import profilePic from "../../img/pic.png"; // Adjust the path based on your folder structure
 
 function Home() {
   return (
@@ -18,7 +19,7 @@ function Home() {
           </a>
         </div>
         <div className="home-image">
-          <img src="/img/pic.png" alt="Neserelah Mussa" />
+          <img src={profilePic} alt="Neserelah Mussa" />
         </div>
       </div>
     </section>

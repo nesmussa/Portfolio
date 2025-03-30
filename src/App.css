@@ -336,6 +336,11 @@ a {
     font-size: clamp(0.95rem, 2vw, 1.1rem);
     background: transparent;
     transition: border-color var(--transition-speed);
+    color: white; /* Makes the text inside inputs white */
+    background-color: #333; /* Optional: Dark background for better contrast */
+    border: 1px solid #555; /* Optional: Border styling */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .input-field:focus {
@@ -345,6 +350,17 @@ a {
 
 .textarea-field {
     min-height: 140px;
+    color: white; /* Makes the text inside the textarea white */
+    background-color: #333; /* Optional: Dark background for better contrast */
+    border: 1px solid #555; /* Optional: Border styling */
+    padding: 10px;
+    border-radius: 5px;
+    resize: none; /* Optional: Prevent resizing */
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+    color: #aaa; /* Optional: Light gray placeholder text */
 }
 
 /* Scroll-triggered animations */

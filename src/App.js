@@ -105,35 +105,30 @@ function App() {
         <section id="home">
           <div className="container">
             <Home />
-            <img src={`${process.env.PUBLIC_URL}/path-to-your-image.jpg`} alt="Description" />
           </div>
         </section>
 
         <section id="about">
           <div className="container">
             <About />
-            <img src={`${process.env.PUBLIC_URL}/path-to-your-image.jpg`} alt="Description" />
           </div>
         </section>
 
         <section id="skill">
           <div className="container">
             <Skill />
-            <img src={`${process.env.PUBLIC_URL}/path-to-your-image.jpg`} alt="Description" />
           </div>
         </section>
 
         <section id="projects">
           <div className="container">
             <Projects />
-            <img src={`${process.env.PUBLIC_URL}/path-to-your-image.jpg`} alt="Description" />
           </div>
         </section>
 
         <section id="contact">
           <div className="container">
             <Contact />
-            <img src={`${process.env.PUBLIC_URL}/path-to-your-image.jpg`} alt="Description" />
           </div>
         </section>
       </main>

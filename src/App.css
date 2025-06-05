@@ -709,3 +709,11 @@ body {
 .contact-form {
     animation: fadeInRight 1.2s ease-in-out;
 }
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-card a{
+    text-align: center;
+}

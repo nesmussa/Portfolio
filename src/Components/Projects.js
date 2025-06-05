@@ -14,6 +14,36 @@ function Projects() {
         "A mobile app designed to organize tasks and send notifications as reminders.",
       github: "https://github.com/nesmussa/To-do-list.git",
     },
+    {
+      title: "Customer Satisfaction Management System for Bole Sub-City",
+      description:
+        "is a web application designed to schedule online appointments and collect and analyze customer feedback for Bole Sub-City, enhancing service quality. Used Technologies: React, Node.js, Express, mysql.",
+      github: "https://cfmsui.technosophia.net/",
+    },
+    {
+      title: "Website for Zemzem Food Complex",
+      description:
+        "is a website designed to promote products and customer feedback for Zemzem Food Complex, enhancing service quality. Used Technologies: React.",
+      github: "https://zemzem.technosophia.net/",
+    },
+    {
+      title: "Dictionary App",
+      description:
+        "A mobile app that provides definitions, synonyms, and translations of words in English and Amharic languages. technologies used: Flutter, Dart, sqlite.",
+      github: "https://github.com/nesmussa/Dictionary.git",
+    },
+    {
+      title: "Patent-Information-Management",
+      description:
+        "A Desktop(java) app that provides patent information and management features. technologies used: Java, Jframe, MySQL.",
+      github: "https://github.com/nesmussa/Patent-Information-Management.git",
+    },
+    {
+      title: "Website for Technosophia(my team)",
+      description:
+        "A website that showcases the projects and services of Technosophia, a team of developers. technologies used: React.",
+      github: "https://technosophia.net/",
+    },
   ];
 
   return (
@@ -30,7 +60,7 @@ function Projects() {
               rel="noopener noreferrer"
               className="btn-secondary"
             >
-              View on GitHub
+              View
             </a>
           </div>
         ))}
